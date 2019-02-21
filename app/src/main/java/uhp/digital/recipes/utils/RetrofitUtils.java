@@ -5,11 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 import uhp.digital.recipes.RecipesApi;
 
 public class RetrofitUtils {
-    /**
-     * Returns a Retrofit object after building it
-     *
-     * @return Retrofit object
-     */
+
     public static Retrofit getClient() {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(RecipesApi.BASE_URL)

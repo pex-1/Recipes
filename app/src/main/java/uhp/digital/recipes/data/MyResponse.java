@@ -9,10 +9,8 @@ public class MyResponse {
     @SerializedName("recipes")
     private List<Recipe> recipes;
 
-
     public List<Recipe> getRecipes() {
         return recipes;
     }
-
 }
 

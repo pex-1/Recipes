@@ -20,9 +20,9 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.RecipeView
     private Context context;
     private List<Recipe> recipes;
 
-    public RecipeAdapter(Context context, List<Recipe> reipes) {
+    public RecipeAdapter(Context context, List<Recipe> recipes) {
         this.context = context;
-        this.recipes = reipes;
+        this.recipes = recipes;
     }
 
     @NonNull
@@ -41,8 +41,6 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.RecipeView
         Picasso.get()
                 .load(link)
                 .placeholder(R.drawable.placeholder)
-                .resize(100, 100)
-                .centerCrop()
                 .into(recipeViewHolder.recipeImage);
         recipeViewHolder.recipeTitle.setText(recipes.get(position).getTitle());
         recipeViewHolder.socialRank.setText(String.valueOf(recipes.get(position).getSocialRank()));

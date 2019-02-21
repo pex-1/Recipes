@@ -12,14 +12,12 @@ android {
     }
     buildTypes {
         debug{
-            buildConfigField "String", "ApiKey", "\"291b7e7495709e9263fc1df6f88b0612\""
-            resValue 'string', "api_key", "\"291b7e7495709e9263fc1df6f88b0612\""
+            buildConfigField "String", "ApiKey", "\"6aa2d62e94eda7faea1cc172dbcd87f1\""
         }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            buildConfigField "String", "ApiKey", "\"291b7e7495709e9263fc1df6f88b0612\""
-            resValue 'string', "api_key", "\"291b7e7495709e9263fc1df6f88b0612\""
+            buildConfigField "String", "ApiKey", "\"6aa2d62e94eda7faea1cc172dbcd87f1\""
         }
     }
 }

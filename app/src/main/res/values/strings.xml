@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Recipes</string>
+    <string name="preview_image_recipe">Preview image</string>
 </resources>

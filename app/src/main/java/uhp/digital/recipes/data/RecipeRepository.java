@@ -15,11 +15,10 @@ import uhp.digital.recipes.RecipesApi;
 import uhp.digital.recipes.utils.RetrofitUtils;
 
 public class RecipeRepository {
-    final MutableLiveData<List<Recipe>> recipes = new MutableLiveData<>();
-    private RecipesApi recipesApi;
+    private final MutableLiveData<List<Recipe>> recipes = new MutableLiveData<>();
 
     public RecipeRepository(final Application application){
-        recipesApi = RetrofitUtils.getClient().create(RecipesApi.class);
+        RecipesApi recipesApi = RetrofitUtils.getClient().create(RecipesApi.class);
         Call<MyResponse> call = recipesApi.getRecipes(BuildConfig.ApiKey);
 
         //run in background
